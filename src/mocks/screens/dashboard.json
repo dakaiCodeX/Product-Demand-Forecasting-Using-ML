@@ -1,0 +1,23 @@
+{
+  "id": "dashboard-home",
+  "title": "Özet Görünüm",
+  "description": "Tahmin doğruluğu, stok devir hızı ve istisna talepleri için hızlı bakış kartları.",
+  "cards": [
+    { "id": "accuracy", "label": "Tahmin Doğruluğu", "value": "92%", "trend": "+1.4%" },
+    { "id": "inventory", "label": "Stok Devir Hızı", "value": "38 gün", "trend": "-3 gün" },
+    { "id": "alerts", "label": "Açık Uyarılar", "value": "7", "trend": "+2" }
+  ],
+  "table": {
+    "columns": [
+      { "key": "sku", "label": "SKU" },
+      { "key": "name", "label": "Ürün" },
+      { "key": "accuracy", "label": "Doğruluk" },
+      { "key": "stockoutRisk", "label": "Stok Riski" }
+    ],
+    "rows": [
+      { "sku": "SKU-001", "name": "Premium Kahve", "accuracy": "95%", "stockoutRisk": "Düşük" },
+      { "sku": "SKU-002", "name": "Organik Çay", "accuracy": "89%", "stockoutRisk": "Orta" },
+      { "sku": "SKU-003", "name": "Soğuk İçecek", "accuracy": "93%", "stockoutRisk": "Yüksek" }
+    ]
+  }
+}

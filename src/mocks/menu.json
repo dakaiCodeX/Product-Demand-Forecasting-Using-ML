@@ -1,0 +1,130 @@
+[
+  {
+    "id": "root-forecast",
+    "title": "Tahmin Operasyonları",
+    "type": "root",
+    "icon": "cloud",
+    "status": "active",
+    "order": 1,
+    "children": [
+      {
+        "id": "group-dashboard",
+        "title": "Gösterge Paneli",
+        "type": "group",
+        "icon": "dashboard",
+        "status": "active",
+        "order": 1,
+        "children": [
+          {
+            "id": "dashboard-home",
+            "title": "Özet Görünüm",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/dashboard",
+            "permissions": ["forecast.view"],
+            "status": "active",
+            "showInTopBar": true,
+            "order": 1
+          },
+          {
+            "id": "dashboard-scenarios",
+            "title": "Senaryo Simülasyonları",
+            "type": "item",
+            "componentType": "jsx",
+            "path": "/dashboard/scenarios",
+            "permissions": ["forecast.view", "forecast.simulate"],
+            "status": "test",
+            "showInTopBar": false,
+            "order": 2
+          }
+        ]
+      },
+      {
+        "id": "group-model",
+        "title": "Model Yönetimi",
+        "type": "group",
+        "icon": "chip",
+        "status": "active",
+        "order": 2,
+        "children": [
+          {
+            "id": "model-registry",
+            "title": "Model Kütüphanesi",
+            "type": "item",
+            "componentType": "tsx",
+            "path": "/models",
+            "permissions": ["forecast.manage"],
+            "status": "active",
+            "showInTopBar": true,
+            "order": 1
+          },
+          {
+            "id": "model-training",
+            "title": "Eğitim Kuyruğu",
+            "type": "item",
+            "componentType": "html",
+            "path": "/models/training",
+            "permissions": ["forecast.manage"],
+            "status": "active",
+            "showInTopBar": false,
+            "order": 2
+          },
+          {
+            "id": "model-monitoring",
+            "title": "Model İzleme",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/models/monitoring",
+            "permissions": ["forecast.view"],
+            "status": "test",
+            "showInTopBar": false,
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "group-admin",
+        "title": "Yönetim",
+        "type": "group",
+        "icon": "shield",
+        "status": "active",
+        "order": 3,
+        "children": [
+          {
+            "id": "admin-users",
+            "title": "Kullanıcılar",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/admin/users",
+            "permissions": ["admin.manage"],
+            "status": "active",
+            "showInTopBar": false,
+            "order": 1
+          },
+          {
+            "id": "admin-menu",
+            "title": "Menü Yönetimi",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/admin/menu",
+            "permissions": ["admin.manage"],
+            "status": "active",
+            "showInTopBar": false,
+            "order": 2
+          },
+          {
+            "id": "admin-settings",
+            "title": "Sistem Ayarları",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/admin/settings",
+            "permissions": ["admin.manage"],
+            "status": "inactive",
+            "showInTopBar": false,
+            "order": 3
+          }
+        ]
+      }
+    ]
+  }
+]
