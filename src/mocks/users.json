@@ -1,0 +1,20 @@
+[
+  {
+    "id": "admin-1",
+    "name": "Admin", 
+    "roles": ["admin"],
+    "permissions": ["forecast.view", "forecast.manage", "forecast.simulate", "admin.manage"]
+  },
+  {
+    "id": "analyst-1",
+    "name": "Analist",
+    "roles": ["analyst"],
+    "permissions": ["forecast.view", "forecast.simulate"]
+  },
+  {
+    "id": "viewer-1",
+    "name": "Gözlemci",
+    "roles": ["viewer"],
+    "permissions": ["forecast.view"]
+  }
+]

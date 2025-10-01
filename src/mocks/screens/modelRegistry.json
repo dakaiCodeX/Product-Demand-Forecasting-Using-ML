@@ -1,0 +1,19 @@
+{
+  "id": "model-registry",
+  "title": "Model Kütüphanesi",
+  "description": "Üretimdeki ve test aşamasındaki tahmin modellerini yönetin.",
+  "filters": [
+    { "id": "status", "label": "Durum", "type": "select", "options": ["production", "staging", "archived"] },
+    { "id": "owner", "label": "Sahip", "type": "text" }
+  ],
+  "columns": [
+    { "key": "name", "label": "Model" },
+    { "key": "version", "label": "Versiyon" },
+    { "key": "status", "label": "Durum" },
+    { "key": "lastTrained", "label": "Son Eğitim" }
+  ],
+  "rows": [
+    { "name": "LSTM Talep", "version": "v2.3", "status": "production", "lastTrained": "2024-02-11" },
+    { "name": "XGBoost Kampanya", "version": "v1.8", "status": "staging", "lastTrained": "2024-02-08" }
+  ]
+}
