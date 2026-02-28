@@ -54,3 +54,43 @@ The dataset comprised of units sold on a daily basis along with details regardin
 - matplotlib
 - xgboost
 
+
+## Enterprise Demand Planning Blueprint (Penti)
+
+This repository now includes a productized planning blueprint page in the UI (`/dashboard/master-plan`) to align demand forecasting, replenishment and production planning teams.
+
+### Target Operating Model
+
+1. **Data Foundation**: POS, ERP, WMS, promotion and pricing data aligned in one model.
+2. **MLOps Layer**: Feature store, model registry, retraining pipeline and monitoring.
+3. **Forecast Layer**: Hierarchical demand forecasts by SKU/store/day and confidence intervals.
+4. **Planning Layer**: Safety stock, reorder point and procurement recommendation engine.
+5. **Execution Layer**: Approved plans synchronized back to planning/ERP systems.
+
+### Suggested Delivery Phases
+
+- **Phase 1 (0-6 weeks)**: data contracts, data quality checks, base dashboards.
+- **Phase 2 (6-12 weeks)**: model benchmark, backtesting, deployment pipeline.
+- **Phase 3 (12-18 weeks)**: planning automation, scenario simulator, S&OP cockpit.
+
+### MVP in this repo
+
+- New **Master Plan** screen with architecture map and roadmap.
+- Built-in **planning calculator** for safety stock / reorder point prototyping.
+
+
+## Run locally (Master Plan page)
+
+If you could not open `http://127.0.0.1:4173/dashboard/master-plan`, run the app with the fixed port below:
+
+```bash
+npm install
+npm run dev:4173
+```
+
+Then open:
+
+- `http://127.0.0.1:4173/`
+- `http://127.0.0.1:4173/dashboard/master-plan`
+
+If the page still falls back to Landing, ensure you are using the default **Admin** mock user (has `forecast.view`).

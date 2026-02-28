@@ -21,7 +21,9 @@
             "type": "item",
             "componentType": "builtin",
             "path": "/dashboard",
-            "permissions": ["forecast.view"],
+            "permissions": [
+              "forecast.view"
+            ],
             "status": "active",
             "showInTopBar": true,
             "order": 1
@@ -32,10 +34,27 @@
             "type": "item",
             "componentType": "jsx",
             "path": "/dashboard/scenarios",
-            "permissions": ["forecast.view", "forecast.simulate"],
+            "permissions": [
+              "forecast.view",
+              "forecast.simulate"
+            ],
             "status": "test",
             "showInTopBar": false,
             "order": 2
+          },
+          {
+            "id": "planning-blueprint",
+            "title": "Talep Planı Master Plan",
+            "type": "item",
+            "componentType": "builtin",
+            "path": "/dashboard/master-plan",
+            "permissions": [
+              "forecast.view",
+              "forecast.manage"
+            ],
+            "status": "active",
+            "showInTopBar": true,
+            "order": 3
           }
         ]
       },
@@ -53,7 +72,9 @@
             "type": "item",
             "componentType": "tsx",
             "path": "/models",
-            "permissions": ["forecast.manage"],
+            "permissions": [
+              "forecast.manage"
+            ],
             "status": "active",
             "showInTopBar": true,
             "order": 1
@@ -64,7 +85,9 @@
             "type": "item",
             "componentType": "html",
             "path": "/models/training",
-            "permissions": ["forecast.manage"],
+            "permissions": [
+              "forecast.manage"
+            ],
             "status": "active",
             "showInTopBar": false,
             "order": 2
@@ -75,7 +98,9 @@
             "type": "item",
             "componentType": "builtin",
             "path": "/models/monitoring",
-            "permissions": ["forecast.view"],
+            "permissions": [
+              "forecast.view"
+            ],
             "status": "test",
             "showInTopBar": false,
             "order": 3
@@ -96,7 +121,9 @@
             "type": "item",
             "componentType": "builtin",
             "path": "/admin/users",
-            "permissions": ["admin.manage"],
+            "permissions": [
+              "admin.manage"
+            ],
             "status": "active",
             "showInTopBar": false,
             "order": 1
@@ -107,7 +134,9 @@
             "type": "item",
             "componentType": "builtin",
             "path": "/admin/menu",
-            "permissions": ["admin.manage"],
+            "permissions": [
+              "admin.manage"
+            ],
             "status": "active",
             "showInTopBar": false,
             "order": 2
@@ -118,7 +147,9 @@
             "type": "item",
             "componentType": "builtin",
             "path": "/admin/settings",
-            "permissions": ["admin.manage"],
+            "permissions": [
+              "admin.manage"
+            ],
             "status": "inactive",
             "showInTopBar": false,
             "order": 3

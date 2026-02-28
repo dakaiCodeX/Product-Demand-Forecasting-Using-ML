@@ -259,3 +259,27 @@ button.ghost:hover,
     transform: rotate(360deg);
   }
 }
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.roadmap-grid h3,
+.planning-results h3 {
+  margin: 0;
+}
+
+.roadmap-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(226, 232, 240, 0.95);
+}
+
+.planning-results p {
+  margin: 0;
+  font-size: 20px;
+  color: #93c5fd;
+  font-weight: 600;
+}

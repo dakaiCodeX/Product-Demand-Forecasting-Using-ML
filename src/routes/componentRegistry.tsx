@@ -4,6 +4,7 @@ import MenuManagement from '@/features/admin/MenuManagement';
 import UserDirectory from '@/features/admin/UserDirectory';
 import ExperienceSettings from '@/features/settings/ExperienceSettings';
 import ModelMonitoring from '@/features/monitoring/ModelMonitoring';
+import PlanningBlueprint from '@/features/planning/PlanningBlueprint';
 
 const jsxRegistry: Record<string, () => Promise<{ default: React.ComponentType<any> }>> = {
   'dashboard-scenarios': () => import('@/features/forecasting/ScenarioSimulator.jsx'),
@@ -23,6 +24,7 @@ export const builtinRegistry: Record<string, React.ComponentType<any>> = {
   'admin-users': UserDirectory,
   'admin-settings': ExperienceSettings,
   'model-monitoring': ModelMonitoring,
+  'planning-blueprint': PlanningBlueprint,
 };
 
 export const loadDynamicComponent = (id: string, type: 'jsx' | 'tsx' | 'html' | 'builtin') => {
